@@ -6,9 +6,10 @@
 	File: qa-lang/de/qa-lang-admin.php
 	Description: Language phrases for admin center
 
-	Version: 1.7
-	Date: 2016-02-11
-	Last Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Version: 1.8
+	Date: 2019-07-19
+  Previous Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Last Editor: arxcode (https://github.com/arxcode)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -56,6 +57,17 @@
 		'block_ips_note' => 'Verwende einen Bindestrich für Bereiche oder * eine beliebige Anzahl Übereinstimmungen . Beispiele: 192.168.0.4, 192.168.0.0-192.168.0.31 192.168.0.*',
 		'block_user_popup' => 'Benutzer blockieren',
 		'block_words_note' => 'Use a * to match any letters. Examples: doh (will only match exact word doh) , doh* (will match doh or dohno) , do*h (will match doh, dooh, dough).',
+		'caching_cleanup' => 'Cache bereinigen',
+		'caching_delete_all' => 'Gesamten Cache löschen',
+		'caching_delete_complete' => 'Cache erfolgreich gelöscht',
+		'caching_delete_expired' => 'Verfallene Cache-Einträge löschen',
+		'caching_delete_progress' => '^1 von ^2 Cache-Dateien gelöscht...',
+		'caching_dir_error' => 'Das Verzeichnis ^, das als QA_CACHE_DIRECTORY konfiguriert ist, kann vom Webserver nicht beschrieben werden.',
+		'caching_dir_missing' => 'Es ist noch kein Cache-Verzeichnis konfiguriert.',
+		'caching_dir_public' => 'Das Verzeichnis ^, das als QA_CACHE_DIRECTORY konfiguriert ist, muss ausserhalb des öffentlichen Document Roots des Webservers liegen.',
+		'caching_num_items' => 'Anzahl Elemente im Cache',
+		'caching_space_used' => 'Gesamtgrösse des Caches',
+		'caching_title' => 'Caching',
 		'cancel_mailing_button' => 'Mailing abbrechen',
 		'categories' => 'Kategorien',
 		'categories_introduction' => 'Um mit einer Kategorie zu beginnen, benutze den \'Kategorie hinzufügen\' Button.',
@@ -104,6 +116,7 @@
 		'edit_title' => ' - ^1Titel bearbeiten^2',
 		'emails_per_minute' => 'E-Mails pro Minute',
 		'emails_title' => 'E-Mails',
+    'enabled' => 'Aktiviert',
 		'feed_link' => 'Feed',
 		'feed_link_example' => 'Beispiel Feed Link',
 		'feeds_title' => 'RSS Feed',
@@ -136,6 +149,7 @@
 		'mailing_unsubscribe' => 'Ein Abmelden Link wird in jeder Nachricht im Fußbereich hinzugefügt.',
 		'maintenance_admin_only' => 'Die Seite befindet sich derzeit im ^1Entwicklungsmodus^2 und ist für normale Benutzer nicht sichtbar.',
 		'maximum_x' => ' (maximal ^)',
+    'memcached_error' => 'Memcached-Fehler: ^',
 		'moderate_title' => 'Moderate',
 		'module_x_database_init' => 'The ^1 ^2 module requires some ^3database initialization^4.',
 		'most_flagged_title' => 'Gekennzeichneter Inhalt',
@@ -149,6 +163,7 @@
 		'no_hidden_found' => 'Kein versteckter Inhalt gefunden',
 		'no_image_gd' => 'Die installierte PHP Version wurde ohne GD Unterstützung erstellt, dadurch können Benutzer keine Profilbilder hochladen.',
 		'no_link' => 'Keine Verlinkung',
+    'no_memcached' => 'Die PHP-Erweiterung für Memcached ist nicht installiert.',
 		'no_multibyte' => 'The installed version of PHP was compiled without multibyte string support. Searching will be less effective for non-Roman characters.',
 		'no_privileges' => 'Nur Administratoren haben Zugriff auf diese Seite.',
 		'no_unapproved_found' => 'Keine Benutzer warten auf Überprüfung',
@@ -195,6 +210,7 @@
 		'recalc_categories_note' => ' - for post categories and category counts',
 		'recalc_categories_recounting' => 'Recounting questions for ^1 of ^2 categories...',
 		'recalc_categories_updated' => 'Recalculated for ^1 of ^2 posts...',
+    'recalc_hotness_q_view_note' => 'Die Deaktivierung kann die Seiten-Ladegeschwindigkeit leicht verbessern, allerdings veraltet die Hotness-Kennzahl, wenn dafür die Anzahl-Views berücksichtigt werden',
 		'recalc_points' => 'Neue Berechnung der Benutzer Punkte',
 		'recalc_points_complete' => 'Alle Punkte der Benutzer wurden neu berechnet.',
 		'recalc_points_note' => ' - for user ranking and points displays',
@@ -249,6 +265,7 @@
 		'total_as' => 'Antworten gesamt:',
 		'total_cs' => 'Kommentare gesamt:',
 		'total_qs' => 'Fragen gesamt:',
+    'total_qs_unans' => 'Unbeantwortete Fragen gesamt:',
 		'unnamed_plugin' => 'Unnamed Plugin',
 		'upgrade_db' => 'Your Question2Answer database needs to be ^1upgraded^2 for this version.',
 		'url_format_note' => 'Options with the ^ label are working for your site\'s configuration. For best search engine optimization (SEO), use the first ^ option available.',

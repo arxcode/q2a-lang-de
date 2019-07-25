@@ -8,9 +8,10 @@
 	File: qa-lang/de/qa-lang-profile.php
 	Description: Language phrases for user profile page
 
-	Version: 1.7
-	Date: 2016-02-10
-	Last Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Version: 1.8
+	Date: 2019-07-19
+  Previous Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Last Editor: arxcode (https://github.com/arxcode)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -68,6 +69,9 @@
 		'permit_moderate' => "Beiträge akzeptieren oder ablehnen",
 		'permit_recat' => "Kategorie von beliebigen Fragen ändern",
 		'permit_retag' => "Themen von beliebigen Fragen ändern",
+    'permit_view_new_users_page' => "Neueste Benutzer anzeigen",
+		'permit_view_special_users_page' => "Spezial-Benutzer anzeigen",
+		'permit_vote_c' => "Kommentare bewerten",
 		'permit_vote_down' => "Beiträge negativ bewerten",
 		'set_bonus_button' => "Bonus aktualisieren",		
 		'answers_by_x' => "Antworten von ^",
@@ -85,6 +89,7 @@
 		'post_wall_must_confirm' => "Bitte Deine ^5Email-Adresse bestätigen^6, um auf dieser Pinnwand posten zu können.",
 		'post_wall_must_login' => "Bitte ^1einloggen^2 oder ^3registrieren^4, um auf dieser Pinnwand posten zu können.",
 		'questions_by_x' => "Fragen von ^",
+    'user_x_disabled_pms' => "Benutzer ^ hat private Nachrichten deaktiviert.",
 		'wall_for_x' => "Pinnwand für ^",
 		'wall_view_more' => "Mehr Pinnwand-Einträge anzeigen...",
 		'delete_pm_popup' => "Diese private Nachricht löschen",

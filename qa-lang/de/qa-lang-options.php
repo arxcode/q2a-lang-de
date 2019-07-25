@@ -6,9 +6,10 @@
 	File: qa-lang/de/qa-lang-options.php
 	Description: Language phrases for all options, as shown in admin center
 
-	Version: 1.7
-	Date: 2016-02-10
-	Last Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Version: 1.8
+	Date: 2019-07-19
+  Previous Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Last Editor: arxcode (https://github.com/arxcode)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -24,7 +25,9 @@
 */
 
 	return array(
+    'allow_anonymous_naming' => 'Anonymen Benutzern erlauben, ihren Namen anzugeben:',
 		'allow_change_usernames' => 'Benutzern mit Beiträgen erlauben ihren Benutzernamen zu ändern:',
+    'allow_close_own_questions' => 'Benutzern erlauben, ihre eigenen Fragen zu schließen:',
 		'allow_close_questions' => 'Erlaube Fragen manuell zu schließen:',
 		'allow_login_email_only' => 'Einloggen nur mit der E-Mail Adresse (nicht Benutzername):',
 		'allow_multi_answers' => 'Erlaube mehrere Antworten pro Benutzer:',
@@ -46,8 +49,17 @@
 		'avatar_q_page_q_size' => 'Größe Profilbild bei Fragen:',
 		'avatar_store_size' => 'Maximale Dateigröße des Profilbildes:',
 		'avatar_users_size' => 'Größe Profilbild auf der Benutzerseite:',
-		'block_bad_words' => 'Zensierte Worte - separiert durch Leerzeichen oder Kommas:',
-		'block_ips_write' => 'Gesperrte IP Adressen - separiert durch Leerzeichen oder Kommas:',
+    'block_bad_usernames' => 'Verbotene Benutzernamen - durch Leerzeichen oder Kommas getrennt:',
+		'block_bad_words' => 'Zensierte Worte - durch Leerzeichen oder Kommas getrennt:',
+		'block_ips_write' => 'Gesperrte IP Adressen - durch Leerzeichen oder Kommas getrennt:',
+    'caching_catwidget_time' => 'Cache category widget for:',
+		'caching_enabled' => 'Caching aktivieren:',
+		'caching_driver' => 'Caching-Treiber',
+		'caching_filesystem' => 'Dateisystem',
+		'caching_memcached' => 'Memcached',
+		'caching_q_start' => 'Fragen cachen nach:',
+		'caching_q_time' => 'Fragen-Detailseiten cachen für:",
+		'caching_qlist_time' => 'Fragen-Übersichtslisten cachen für:',    
 		'captcha_module' => 'Benutze das Captcha Modul:',
 		'captcha_on_anon_post' => 'Benutze Captcha bei anonymen Beiträgen:',
 		'captcha_on_feedback' => 'Benutze Captcha im Feedback Formular:',
@@ -145,6 +157,7 @@
 		'min_len_q_content' => 'Minimale Länge der Frage:',
 		'min_len_q_title' => 'Minimale Länge des Titels einer Frage:',
 		'min_num_q_tags' => 'Mindestanzahl von Tags:',
+    'minify_html' => 'HTML verkleinern (minify):',
 		'moderate_anon_post' => 'Use moderation for anonymous posts:',
 		'moderate_by_points' => 'Use moderation for users with few points:',
 		'moderate_edited_again' => 'Re-moderate posts after editing:',
@@ -201,17 +214,22 @@
 		'place_main_below_title' => 'Main area - Below title',
 		'place_main_bottom' => 'Main area - Bottom',
 		'place_main_top' => 'Main area - Top',
-		'place_side_below_categories' => 'Side panel - Below categories',
-		'place_side_below_sidebar' => 'Side panel - Below sidebar box',
-		'place_side_last' => 'Side panel - Last',
-		'place_side_top' => 'Side panel - Top',
+		'place_side_below_categories' => 'Seitenpanel - Unter den Kategorien',
+		'place_side_below_sidebar' => 'Seitenpanel - Unter Seitenleisten-Box',
+		'place_side_last' => 'Seitenpanel - Letzte',
+    'place_side_low' => 'Seitenpanel - Tief',
+		'place_side_top' => 'Seitenpanel - Oben',
 		'points_a_selected' => 'Wenn eigene Antwort als beste ausgewählt wird:',
-		'points_a_voted_max_gain' => 'Begrenzung für positive Bewertungen einer Antwort:',
-		'points_a_voted_max_loss' => 'Begrenzung für negative Bewertungen einer Antwort:',
+		'points_a_voted_max_gain' => 'Begrenzung für positive Bewertungen pro Antwort:',
+		'points_a_voted_max_loss' => 'Begrenzung für negative Bewertungen pro Antwort:',
+		'points_c_voted_max_gain' => 'Begrenzung für positive Bewertungen pro Kommentar:',
+		'points_c_voted_max_loss' => 'Begrenzung für negative Bewertungen pro Kommentar:',
 		'points_base' => 'Add for all users:',
 		'points_multiple' => 'Multiplizieren aller Punkte:',
 		'points_per_a_voted_down' => 'Per down vote on your answer:',
 		'points_per_a_voted_up' => 'Per up vote on your answer:',
+		'points_per_c_voted_down' => 'Per down vote on your comment:',
+		'points_per_c_voted_up' => 'Per up vote on your comment:',
 		'points_per_q_voted_down' => 'Per down vote on your question:',
 		'points_per_q_voted_up' => 'Per up vote on your question:',
 		'points_post_a' => 'Schreiben einer Antwort:',
@@ -225,11 +243,13 @@
 		'points_vote_up_q' => 'Positive Bewertung einer Frage:',
 		'q_urls_remove_accents' => 'Entferne Akzente von den Fragen URLs:',
 		'q_urls_title_length' => 'Fragen Titel Länge in URLs:',
+    'recalc_hotness_q_view' => 'Hotness nach jedem Besuch einer Fragen-Seite neu berechnen:",
 		'register_notify_admin' => 'E-Mail Benachrichtigung wenn sich ein neuer Benutzer registriert:',
 		'search_module' => 'Benutze das suchen Modul:',
 		'show_a_form_immediate' => 'Zeige sofort das Antwort-Formular:',
 		'show_always' => 'Immer',
 		'show_c_reply_buttons' => 'Zeige den Antwort Button bei Kommentaren:',
+    'show_compact_numbers' => 'Zahlen im Kurzformat darstellen (z.B. 1,3t statt 1.300):",
 		'show_custom_answer' => 'Eigene Nachricht im Antwort Formular - HTML erlaubt:',
 		'show_custom_ask' => 'Eigene Nachricht beim Fragen Formular - HTML erlaubt:',
 		'show_custom_comment' => 'Eigene Nachricht auf dem Kommentar Formular - HTML erlaubt:',
@@ -282,10 +302,12 @@
 		'tags_or_categories' => 'Fragen Klassifizierung:',
 		'time_approved' => 'Time approved',
 		'time_written' => 'Time written',
+    'use_microdata' => 'Schema.org Microdata verwenden:',
 		'votes_separated' => 'Zeige separate + und - Bewertungen:',
-		'voting_on_as' => 'Erlaube Abstimmungen bei Antworten:',
-		'voting_on_q_page_only' => 'Allow voting on question page only:',
-		'voting_on_qs' => 'Erlaube Abstimmungen bei Fragen:',
+		'voting_on_as' => 'Bewertung von Antworten erlauben:',
+    'voting_on_cs' => 'Bewertung von Kommentaren erlauben:',
+		'voting_on_q_page_only' => 'Bewertungen nur auf der Fragen-Seite erlauben:',
+		'voting_on_qs' => 'Bewertung von Fragen erlauben:',
 	);
 
 

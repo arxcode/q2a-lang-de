@@ -8,9 +8,10 @@
 	File: qa-lang/de/qa-lang-users.php
 	Description: Language phrases for user management
 
-	Version: 1.7
-	Date: 2016-02-10
-	Last Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Version: 1.8
+	Date: 2019-07-19
+  Previous Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Last Editor: arxcode (https://github.com/arxcode)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -34,12 +35,17 @@
 		'block_user_button' => 'Benutzer sperren',
 		'blocked_users' => 'Gesperrte Benutzer',
 		'change_password' => 'Passwort ändern',
+    'confirm_button' => 'E-Mail-Adresse bestätigen',
 		'confirm_complete' => 'Danke - Deine Email-Adresse wurde bestätigt',
 		'confirm_emailed' => 'Wir haben dir einen Bestätigungs-Link geschickt. Bitte klicke den Link, um deine Email-Adresse zu bestätigen.',
 		'confirm_title' => 'Email-Adresse bestätigen',
 		'confirm_wrong_log_in' => 'Code nicht korrekt - bitte ^1logge dich ein^2 um einen neuen Link zu bekommen',
 		'confirm_wrong_resend' => 'Code nicht korrekt - klicke um einen neuen Link zu bekommen',
 		'edit_user_button' => 'Diesen Benutzer bearbeiten',
+    'email_code_another' => 'neuen Code schicken',
+		'email_code_emailed' => 'Wir haben dir deinen Code per E-Mail geschickt',
+		'email_code_label' => 'Code:',
+		'email_code_wrong' => 'Code nicht korrekt',
 		'email_confirmed' => 'Bestätigt',
 		'email_exists' => 'Diese Email-Adresse gehört schon zu einem Account',
 		'email_handle_label' => 'Email-Adresse oder Benutzername:',
@@ -50,6 +56,7 @@
 		'email_required' => 'Email-Adresse benötigt (nicht öffentlich)',
 		'forgot_link' => 'Ich habe mein Passwort vergessen',
 		'full_name' => 'Vollständiger Name',
+    'handle_blocked' => 'Dieser Benutzername kann nicht vergeben werden - bitte wähle einen anderen',
 		'handle_empty' => 'Dieser Benutzername existiert nicht',
 		'handle_exists' => 'Benutzername schon vergeben - bitte wähle einen anderen',
 		'handle_has_bad' => 'Benutzername enthält ungültige Zeichen: ^',

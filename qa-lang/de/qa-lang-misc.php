@@ -8,9 +8,10 @@
 	File: qa-lang/de/qa-lang-misc.php
 	Description: Miscellaneous language phrases
 
-	Version: 1.7
-	Date: 2016-02-10
-	Last Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Version: 1.8
+	Date: 2019-07-19
+  Previous Editor: Dominik Reichardt (dominik@reichardt-online.it)
+	Last Editor: arxcode (https://github.com/arxcode)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -74,6 +75,7 @@
 		'nav_my_content' => 'Mein Inhalt',
 		'nav_my_details' => 'Meine Details',
 		'nav_my_favorites' => 'Meine Favoriten',
+    'next_step' => 'Nächster Schritt',
 		'no_favorite_categories' => 'Keine favorisierte Kategorie',
 		'no_favorite_qs' => 'Keine favorisierten Fragen',
 		'no_favorite_tags' => 'Keine favorisierten Themen',
